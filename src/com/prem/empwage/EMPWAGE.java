@@ -1,10 +1,10 @@
 package com.prem.empwage;
 
 /**
- * UC4 SOLVING USING SWITCH CASE STATEMENT CALCULATE WAGES FOR MONTH
+ * UC5 CALCULATE WAGES TILL A CONDITION OF TOTAL WORKING HRS OR DAYS IS REACHED FOR MONTH
  *
  * @author prem
- * @version 1.3
+ * @version 1.4
  * @since 08/09/2021
  */
 
@@ -21,24 +21,42 @@ public class EMPWAGE {
         int full_Time_hr = 16;
         int part_Time_hr = 8;
         int Wage_per_hr = 20;
-        int days = 20;
 
-        System.out.println("Enter:");
-        int emp_check = sc.nextInt();
-        // System.out.println(emp_check);
 
-        switch (emp_check) {
-            case 0:
-                System.out.println(0);
-                break;
-            case 1:
-                int salary = (Wage_per_hr * full_Time_hr * days);
-                System.out.println(salary);
-                break;
-            case 2:
-                salary = (Wage_per_hr * part_Time_hr * days);
-                System.out.println(salary);
-                break;
+        int emp_hr = 0;
+        int day = 0;
+        int salary = 0;
+
+        System.out.println("ENTER THE HOUR");
+        int a = sc.nextInt();
+        System.out.println("ENTER THE DAYS");
+        int b = sc.nextInt();
+
+        while (emp_hr <= a && day <= b) {
+
+            int empCheck = (int) (Math.random() * 10) % 3;
+
+            switch (empCheck) {
+                case 0:
+                    // System.out.println("Absent");
+                    day++;
+                    break;
+                case 1:
+                    //  System.out.println("Present full day");
+                    salary = (salary + (full_Time_hr * Wage_per_hr));
+                    emp_hr = (emp_hr + full_Time_hr);
+                    day++;
+                    break;
+                case 2:
+                    // System.out.println("Present partTime");
+                    salary = (salary + (part_Time_hr * Wage_per_hr));
+                    emp_hr = (emp_hr + part_Time_hr);
+                    day++;
+                    break;
+            }
         }
+                    System.out.println(salary);
+                    System.out.println(emp_hr);
+                    System.out.println(day);
     }
 }
