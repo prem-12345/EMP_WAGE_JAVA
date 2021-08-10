@@ -4,7 +4,7 @@ package com.prem.empwage;
  * UC3 ADD PART TIME EMPLOYEE AND WAGE
  *
  * @author prem
- * @version 1.2
+ * @version 1.3
  * @since 08/09/2021
  */
 
