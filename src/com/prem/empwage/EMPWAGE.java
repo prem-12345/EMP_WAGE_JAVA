@@ -4,7 +4,7 @@ package com.prem.empwage;
  * UC2 CALCULATE DAILY EMPLOYEE WAGE
  *
  * @author prem
- * @version 1.1
+ * @version 1.2
  * @since 08/09/2021
  */
 
