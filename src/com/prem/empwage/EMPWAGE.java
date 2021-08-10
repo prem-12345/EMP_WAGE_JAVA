@@ -10,7 +10,11 @@ package com.prem.empwage;
 
 public class EMPWAGE {
     public static void main(String[] args) {
+        
+        //constant
         int is_full_time = 1;
+        
+        //computation
         double empCheck = Math.floor(Math.random() * 10) % 2;
 
         if (empCheck == 1) {
