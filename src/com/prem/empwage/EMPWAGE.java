@@ -13,7 +13,8 @@ import java.util.Scanner;
 public class EMPWAGE {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        
+        //constants
         int is_full_time = 1;
         int is_part_time = 2;
         int is_absent = 0;
@@ -22,11 +23,11 @@ public class EMPWAGE {
         int part_Time_hr = 8;
         int Wage_per_hr = 20;
         int days = 20;
-
+        
+        //taking the user input
         System.out.println("Enter:");
         int emp_check = sc.nextInt();
-        // System.out.println(emp_check);
-
+        //computation
         switch (emp_check) {
             case 0:
                 System.out.println(0);
