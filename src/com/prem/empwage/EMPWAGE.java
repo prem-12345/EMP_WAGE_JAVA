@@ -4,7 +4,7 @@ package com.prem.empwage;
  * UC4 SOLVING USING SWITCH CASE STATEMENT CALCULATE WAGES FOR MONTH
  *
  * @author prem
- * @version 1.3
+ * @version 1.4
  * @since 08/09/2021
  */
 
