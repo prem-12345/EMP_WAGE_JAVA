@@ -10,13 +10,15 @@ package com.prem.empwage;
 
 public class EMPWAGE {
     public static void main(String[] args) {
+        
+        //constants
         int is_full_time = 1;
         int is_part_time=2;
         int is_absent = 0;
-
         int emp_hr = 16;
         int Wage_per_hr = 20;
-
+        
+        //computation
         double empCheck = Math.floor(Math.random() * 10) % 3;
         if (empCheck == 1) {
             System.out.println("EMPLOYEE IS FULL_TIME");
@@ -32,6 +34,7 @@ public class EMPWAGE {
         }
 
         int dailywage = (emp_hr * Wage_per_hr);
+        //printing the Emp Daily Wage
         System.out.println("Emp Daily Wage");
         System.out.println(dailywage);
     }
