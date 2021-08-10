@@ -4,8 +4,8 @@ package com.prem.empwage;
  * UC5 CALCULATE WAGES TILL A CONDITION OF TOTAL WORKING HRS OR DAYS IS REACHED FOR MONTH
  *
  * @author prem
- * @version 1.4
- * @since 08/09/2021
+ * @version 1.5
+ * @since 09/08/2021
  */
 
 import java.util.Scanner;
