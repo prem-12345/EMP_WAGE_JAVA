@@ -14,24 +14,26 @@ public class EMPWAGE {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //constants
         int is_full_time = 1;
         int is_part_time = 2;
         int is_absent = 0;
-
         int full_Time_hr = 16;
         int part_Time_hr = 8;
         int Wage_per_hr = 20;
 
-
+        //variables
         int emp_hr = 0;
         int day = 0;
         int salary = 0;
-
+        
+        //taking user inputs
         System.out.println("ENTER THE HOUR");
         int a = sc.nextInt();
         System.out.println("ENTER THE DAYS");
         int b = sc.nextInt();
 
+        //computation
         while (emp_hr <= a && day <= b) {
 
             int empCheck = (int) (Math.random() * 10) % 3;
